@@ -1,0 +1,11 @@
+nodejs
+http://nodeguide.com/beginner.html#frameworks
+
+d3
+https://www.dashingd3js.com/adding-a-dom-element
+
+javascript
+http://eloquentjavascript.net/02_program_structure.html
+
+express
+http://expressjs.com/

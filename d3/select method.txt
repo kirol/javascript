@@ -1,0 +1,9 @@
+The first part of the JavaScript code that we wrote is .select("body").
+
+The D3.js Select method uses CSS3 selectors to grab DOM elements. To learn more about CSS3 selectors please check this out => CSS3 Selectors
+
+D3 looks at the document and selects the first descendant DOM element that contains the tag body.
+
+Once an element is selected, D3.js allows you to apply operators to the element you have selected.
+
+These operators can get or set things like "attributes", "properties", "styles", "HTML", and "text content".
