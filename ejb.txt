@@ -1,0 +1,2 @@
+ejb: Javascript inside HTML
+jsb: Java inside HTML

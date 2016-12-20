@@ -1,0 +1,16 @@
+In Node, the __dirname is a global object that contains the name of the directory that the executing script resides from. For example, if you are running node script.js from /home/user/env, then __dirname will contain `/home/user/env.
+
+The method app.use() is a function inherited from the Connect framework, which is the framework Express is written on. The method attaches a middleware function to the application stack, which runs every time Express receives a request.
+
+The code you showed mounts a static server to the path / that reads from the directory the script is executing from:
+
+app.use('/', express.static(__dirname));
+If you were to change the path to /path, then the static file server will serve static files from that path instead. If you specify no path, then / is used by default.
+
+As for what express.static() does itself, it accepts a path and returns a middleware function that listens on requests. This is how the middleware works:
+
+Check if the request method is GET or HEAD. If neither, ignore the request.
+Parse the path and pause the request.
+Check if there is a default redirect. If so, redirect with a HTTP 303.
+Define the handlers for if a directory or error is encountered.
+Pass everything to the send module for MIME identification and file serving.

@@ -1,0 +1,15 @@
+Lets say your company makes 4 different products, your client has another 3 different products from another 3 different companies.
+
+Someday the client thought, why don't we integrate all our systems into one huge system. Ten minutes later their IT department said that will take 2 years.
+
+You (the wise developer) said, why don't we just integrate all the different systems and make them work together in a homogeneous environment? The client manager staring at you... You continued, we will use a Middleware, we will study the Inputs/Outputs of all different systems, the resources they use and then choose an appropriate Middleware framework.
+
+Still explaining to the non tech manager
+With Middleware framework in the middle, the first system will produce X stuff, the system Y and Z would consume those outputs and so on.
+
+
+A software stack generally refers to a set of technologies that work together to support the development, maintenance and operation of software. Stack in this context is a bit of a colloquialism and doesn't have an official definition, but often includes all software that is required for your solution (including the webserver, the OS, any special extensions like memcache etc, as well as developer tools like a tightly coupled platform/language/IDE). Sometimes, the definition might even extend to a hardware stack like Amazon's cloud computing services.
+
+A framework has a more technical definition, and although the term is sometimes used interchangeably with library, a framework is usually distinguished by a property called Inversion of Control. Contrasted with a library, where methods are called by the programmer where needed, using a framework usually means that much of the application functionality is deferred to the framework, allowing the programmer to avoid writing boilerplate code and merely "fill in the blanks", leaving the framework to decide when its appropriate to execute core business logic.
+
+Middleware is a bit more esoteric, but often refers to software or an application interface built to facilitate standard communication between complex systems. You can expect middleware to perform tasks like parsing, authentication or just provide a standard way to communicate data between systems. Contrasted with a library or framework, middleware is generally not considered a "developer tool" per-say and tends to be pretty tightly integrated into the systems it facilitates.
