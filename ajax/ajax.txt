@@ -1,3 +1,14 @@
+
+
+AJAX is a developer's dream, because you can:
+
+    Update a web page without reloading the page
+    Request data from a server - after the page has loaded
+    Receive data from a server - after the page has loaded
+    Send data to a server - in the background
+
+
+
 Ajax is for Action Not Content
 
 If you're going to put up an Ajax application, or just something Ajax-like on your Web site, first determine if the data you're accessing changes. The point of the asynchronous request is that it makes requests to the server for information that has changed faster - because it's happening while the reader is doing something else. Then when they click a link or button (or after a set amount of time - whatever your distinction is) the data shows up right away.
@@ -5,3 +16,17 @@ If you're going to put up an Ajax application, or just something Ajax-like on yo
 If your content or data never changes, then you shouldn't use Ajax to access it.
 
 If your content or data only rarely changes, then you probably shouldn't use Ajax to access it.
+
+
+
+Things That Are Good for Ajax
+
+    Form validation
+    This is almost a no-brainer. It's so much nicer when the form tells you as you are typing if you've filled it out wrong or not. Having to go to the server and then return an error message is not only old, it's slow. Leave the server validation in the form, that's important for accessibility. But for those who can support Ajax, tell them right away.
+    Comments
+    Comments on blogs or even just articles are a great use of Ajax. Comments can change all the time, and especially when a commenter hits the comment button, it's nice to see the comment appear immediately on the page. 
+
+    Filtering data
+    If you've got a large table with a lot of data in it, a nice application for Ajax is to add filters and sorters to the table. Getting your Web table to act more like Excel is really useful to people.
+    Surveys and polls
+    When you click on your vote, the poll would just switch to show you the results. And before you comment, About doesn't yet support Ajax on our polls - but it sure would be nice. Maybe we can give the About.com developers an "Ajax call" of our own.
