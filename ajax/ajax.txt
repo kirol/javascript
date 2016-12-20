@@ -1,0 +1,7 @@
+Ajax is for Action Not Content
+
+If you're going to put up an Ajax application, or just something Ajax-like on your Web site, first determine if the data you're accessing changes. The point of the asynchronous request is that it makes requests to the server for information that has changed faster - because it's happening while the reader is doing something else. Then when they click a link or button (or after a set amount of time - whatever your distinction is) the data shows up right away.
+
+If your content or data never changes, then you shouldn't use Ajax to access it.
+
+If your content or data only rarely changes, then you probably shouldn't use Ajax to access it.

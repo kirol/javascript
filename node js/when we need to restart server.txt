@@ -1,0 +1,2 @@
+After editing ejs file, the change is on client side, so we don't need to restart node
+After editing js file, the change is on server, so we need to restart node for the change to be applied
