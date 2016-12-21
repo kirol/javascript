@@ -1,0 +1,9 @@
+Apache and Nginx are both HTTP servers. They can serve static files like (.jpg and .html files) or dynamic pages (like a Wordpress blog or forum written in a language like PHP or Python). Apache/nginx need to be configured to recognize the URLs that users will be requesting and route them to the right place.
+
+So, for example, with a typical PHP site (like a Wordpress blog) you tell Apache that any file that ends with .php should be interpreted as PHP code, so when the user visits "http://myblog.com/tag.php?q=mytag", for example, Apache will launch the PHP interpreter to read the file and process it into an HTML page. As part of this process, PHP may talk to a MySQL database and use that to generate the page. Lastly, PHP gives the final HTML code to Apache to send to the user's browser.
+
+Now, Node is a bit different. It's a programming environment like PHP that lets you talk to database, make dynamic pages, etc. However, it differs in that it includes an HTTP server. That means that it can actually act completely on its own without nginx or Apache. You can just run Node and it will be the HTTP server and also the "app server" (which actually creates your dynamic pages and talks to the DB).
+
+It's a two for one deal.
+
+Last thing to know is that when people actually deploy Node on the internet, they sometimes put another HTTP server like nginx in front of Node. That means that when a user loads a page, it first hits Nginx which can make a decision about where to route the request. This is handy if you have a big site and need to run many Node instances to handle all your traffic. This way, the single nginx server can split the work to be done among many Node.js "app servers".
