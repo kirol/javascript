@@ -1,0 +1,7 @@
+Managing dependency versions
+
+npm uses Semantic Versioning, or, as we often refer to it, SemVer, to manage versions and ranges of versions of packages.
+
+If you have a package.json file in your directory and you run npm install, then npm will look at the dependencies that are listed in that file and download the latest versions satisfying semver rules for all of those.
+
+To learn more about semantic versioning, check out our Getting Started "Semver" page.
