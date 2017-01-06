@@ -1,0 +1,5 @@
+var scope = "abc";   // Declare a new global variable whose name is scope
+function checkscope(){
+	var scope = "def"; // Declare a new local variable whose name is scope
+	return scope;
+}
