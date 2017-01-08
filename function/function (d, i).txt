@@ -1,0 +1,3 @@
+.each(function (d,i)
+d, i are two optional parameters d and i 
+The first parameter d represents the datum bound to this particular element (if this sounds confusing to you, don't worry we will cover data binding in depth in the next chapter). The second parameter i is the index number for the current element object being iterated through. This index is zero-based meaning it starts from zero and increments each time a new element is encountered.
