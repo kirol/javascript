@@ -1,0 +1,82 @@
+Since both gojs and jquery use $ sign as alias. We need to set jquery to noconflict to let gojs use $ sign as alias and use fullname for jquery 
+ jQuery.noConflict();
+        jQuery(document).ready(function(){
+
+                jQuery("#insideTable > tbody > tr:odd").addClass("odd");
+                jQuery("#insideTable > tbody > tr:not(.odd)").hide();
+                jQuery("#insideTable > tbody > tr:odd").show();
+                jQuery("#insideTable > tbody > tr.odd").click(function(){
+                    jQuery(this).next().toggle();
+                    jQuery(this).find(".arrow").toggleClass("up");
+                });
+
+            });
+
+Or you can set another alias name for jquery
+var myJqueryAlias = jQuery.noConflict();
+myJqueryAlias(document).ready(function(){
+
+        myJqueryAlias("#insideTable > tbody > tr:odd").addClass("odd");
+        myJqueryAlias("#insideTable > tbody > tr:not(.odd)").hide();
+        myJqueryAlias("#insideTable > tbody > tr:odd").show();
+        myJqueryAlias("#insideTable > tbody > tr.odd").click(function(){
+            myJqueryAlias(this).next().toggle();
+            myJqueryAlias(this).find(".arrow").toggleClass("up");
+        });
+
+    });
+			
+This is because jQuery.noConflict() "frees" the "$" from being associated with jQuery. Normally in your code you can use $ as a replacement for "jQuery". If you use noConflict() you can't do that anymore and so you have to replace each "$" with "jQuery"; .
+
+Many JavaScript libraries use $ as a function or variable name, just as jQuery does. In jQuery's case, $ is just an alias for jQuery, so all functionality is available without using $. If we need to use another JavaScript library alongside jQuery, we can return control of $ back to the other library with a call to $.noConflict():
+you can also create a totally new alias to use
+
+var myJqueryAlias = jQuery.noConflict();
+myJqueryAlias(document).ready(function(){
+
+        myJqueryAlias("#insideTable > tbody > tr:odd").addClass("odd");
+        myJqueryAlias("#insideTable > tbody > tr:not(.odd)").hide();
+        myJqueryAlias("#insideTable > tbody > tr:odd").show();
+        myJqueryAlias("#insideTable > tbody > tr.odd").click(function(){
+            myJqueryAlias(this).next().toggle();
+            myJqueryAlias(this).find(".arrow").toggleClass("up");
+        });
+
+    });
+
+
+
+
+$ is just a shortcut for jQuery. The idea is that everything is done with the one global symbol (since the global namespaces is ridiculously crowded), jQuery, but you can use $ (because it's shorter) if you like:
+
+// These are the same barring your using noConflict (more below)
+var divs = $("div");       // Find all divs
+var divs = jQuery("div");  // Also find all divs, because
+console.log($ === jQuery); // "true"
+If you don't want to use the alias, you don't have to. And if you want $ to not be an alias for jQuery, you can use noConflict and the library will restore $ to whatever it was before jQuery took it over. (Useful if you also use Prototype or MooTools.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('#Text').click(function () {
+  $('#Text').css('color', 'red')
+});
+
+
+jQuery('#Text').click(function () {
+  jQuery('#Text').css('color', 'red');
+});
