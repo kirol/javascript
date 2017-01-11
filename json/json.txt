@@ -1,0 +1,42 @@
+// Get all keys and values
+jQuery.getJSON( "json/test.json", function( data ) {
+  var items = [];
+  jQuery.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  jQuery( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});
+
+
+
+
+
+// Get value based on key
+jQuery.getJSON( "json/test.json", function( data ) {
+  var items = data["currenttestcaseid"];
+  console.log(items);
+});
+
+
+
+
+jQuery.getJSON( "json/testcases.json", function( data ) {
+  var items = [];
+  jQuery.each( data, function( keyi, vali ) {
+    jQuery.each( vali, function( keyj, valj ) {
+    items.push( "<li id='" + keyj + "'>" + valj + "</li>" );
+})
+  });
+  
+  
+  
+  [{"name":"T1-01: Check for SQL injection attacks"},
+{"name":"T1-02: Check for Brute Force Attacks"},
+{"name":"T1-03: Test for Denial of Service Attacks"},
+{"name":"T1-04: Check if access previleges are implemented correctly"}
+]
+
