@@ -1,0 +1,1 @@
+Use this page http://www.tablesgenerator.com/html_tables to create a sample html for table then apply css .
