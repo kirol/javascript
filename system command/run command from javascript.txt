@@ -1,0 +1,7 @@
+In node.js for example executing programs works like this:
+
+var spawn = require('child_process').spawn,
+var ls  = spawn('ls', ['-l']);
+ls.stdout.on('data', function (data) {
+   console.log(data);
+});
