@@ -1,0 +1,44 @@
+app.post('/IAtool', function (req, res){
+    var form = new formidable.IncomingForm();
+    var jsonFileType = /\b\.json\b/;
+    var jarFileType = /\b\.jar\b/;
+    form.parse(req);
+
+    // fileBegin emits whenever a new file is detected in the upload stream
+    form.on('fileBegin', function (name, file)
+    {
+        if (jsonFileType.test(file.name) === true )
+        {
+            file.path = __dirname + '/views/json/test.json';
+            console.log("Upload json file type");
+        } 
+        else if(jarFileType.test(file.name) === true )
+        {
+            console.log("Upload jar file type");
+            file.path = 'tattletale/LibraryJTP.jar';
+        }
+    });
+
+
+    // file emits whenever a file has been received
+    form.on('file', function (name, file)
+    {
+        console.log('Uploaded ' + file.name);
+        if(jarFileType.test(file.name) === true)
+        {
+            console.log("Finish upload jar file");
+            var spawn = require('child_process').spawn;
+            var ls = spawn('java',['-jar','tattletale/tattletale.jar','tattletale/LibraryJTP.jar','views/output/']);
+            ls.stdout.on('data', function(data)
+            {
+            console.log(data.toString());
+            });
+        }
+    });
+
+
+
+    
+    res.redirect(req.get('referer'));
+    
+});
