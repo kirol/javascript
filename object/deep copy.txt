@@ -1,0 +1,1 @@
+for(var k in firstObject) secondObject[k]=firstObject[k];
