@@ -1,0 +1,7 @@
+npm init
+# create default package.json 
+
+After creating default package.json, you can add additional module to package json by using command:
+npm install ten_package --save
+npm install express@4.8.1 --save
+npm install express --save

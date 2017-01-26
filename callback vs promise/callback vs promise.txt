@@ -1,0 +1,3 @@
+World Before Promises: Callback
+
+Must we use promise for asynchronous call? Nope. Prior to Promise, we use callback. Callback is just a function you call when you get the return result
