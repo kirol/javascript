@@ -1,0 +1,21 @@
+=================app.js file==============================
+// Return the generated file for download
+app.get("/download", function (req, res) {
+    // Resolve the file path etc... 
+    res.download(__dirname + "/views/json/test.json");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+==================html file=========================
+ <li><form class="submitLinkForm" action="/download" ><button class="submitLinkButton" type="submit">Export</button></form></li>
+                            
