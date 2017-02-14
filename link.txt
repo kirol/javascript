@@ -23,3 +23,5 @@ GO("ContextMenuButton",
 The definition of "ContextMenuButton" (and "Button", which it uses) is shown in http://gojs.net/latest/intro/buttons.html10. In version 1.5 we will put that code into a separate file, in the extensions directory, so that it's easy to copy and load. Version 1.5 also supports defining your own named GraphObject builders, just as "Button" and "ContextMenuButton" are defined.
 
 The http://gojs.net/latest/samples/basic.html15 sample shows how context menu buttons can be made invisible when they are disabled. Instead of binding the GraphObject.visible property, you could bind other properties for your own purposes.
+
+https://github.com/getify/You-Dont-Know-JS
