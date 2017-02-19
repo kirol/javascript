@@ -1,0 +1,2 @@
+To write code to copy file from one location to another location on server, we must write this function on app.js of node.js
+You can not write this function on html or javascript files. Because these files are client-side 
