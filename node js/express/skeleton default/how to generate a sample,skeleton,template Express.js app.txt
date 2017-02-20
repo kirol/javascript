@@ -1,0 +1,5 @@
+express -e -c less -f cli-app
+
+-e or --ejs: add EJS engine support (www.embeddedjs.com). By default, Jade is used
+-c less or --css less: adds style sheet <engine> support for Less; by default plain CSS is used
+-f or --force: forces app generation on a non-empty directory
