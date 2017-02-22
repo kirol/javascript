@@ -1,0 +1,12 @@
+In case jquery method does not work, we should use old plain javascript method
+
+For example: 
+To get all options of a select using jQuery
+$("#id option").each(function()
+{
+    // Add $(this).val() to your list
+});
+
+But if above method does not work, we should use plain old javascript method instead:
+var myOpts = document.getElementById('yourselect').options;
+alert(myOpts[0].value) //=> Value of the first option
