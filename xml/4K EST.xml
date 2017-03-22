@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="T276.9 - 4K EST" >
+<node_order><![CDATA[8]]></node_order>
+<details><![CDATA[<p>&nbsp;<span style="color: rgb(31, 73, 125);">CRT:</span></p>
+<p class="MsoNormal"><span style="color:#1F497D">T329.9-01: Buying a 4K EST title authorizes its HD-equivalent<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">T329.9-02: Renting a 4K Rental-EST title authorizes its HD-equivalent<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span></p>
+<p class="MsoNormal"><span style="color:#1F497D">ERT:<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">T329.9-03: Buying an HD EST title does not authorize its 4K-equivalent<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">T329.9-04: Renting an HD Rental-EST title does not authorize its 4K-equivalent<o:p></o:p></span></p>]]> 
+</details>
+<testcase internalid="401909" name="T276.9-01: Buying a 4K EST title authorizes its HD-equivalent">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[10551]]></externalid>
+	<summary><![CDATA[<p><strong>[R-EST.64]<br />
+</strong></p>
+<p><strong>If the EST content is purchased as 4K content, the STB guide shall display both 4K and HD titles for that content.</strong><br />
+&nbsp;</p>
+<p><span style="font-size: small; line-height: 14.95px;">Prerequisites:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">-STB is connected to the Internet</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;">-STB has acquired EST VO to enable EST - if VO&nbsp;is not on air, then smart search the keyword &quot;MWCMD&nbsp;E5T ON&quot; to enable EST</span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>NOTE:</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST ONLY&quot; means that the title is available for EST purchase only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;Rental ONLY&quot; means that the title is available for rental only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST&nbsp;&amp; Rental&quot; means that the title is available for EST purchase and for rental.</strong></span></p>]]></summary>
+	<steps><![CDATA[<p>1. Find an unpurchased 4K BBVOD (either &quot;EST ONLY&quot; or &quot;EST &amp; Rental&quot;) that also has an HD equivalent (with the same content ID).<br />
+You can select on titles on the 4K Homepage (1100 - 1104) or in a Smart Search for the 4K Category - if multiple versions of the title are available, they will be listed.</p>
+<p>2. Download both the HD &amp; 4K versions of the title.</p>
+<p>3. Play the HD version of the title.</p>
+<p>4. Play the 4K version of the title.</p>
+<p>5. Buy the 4K title and view past the free preview period.</p>
+<p>6. Play the HD title again.</p>]]></steps>
+	<expectedresults><![CDATA[<p>1. -</p>
+<p>2. Both HD and 4K versions of the title appear in the Playlist.</p>
+<p>3. <span style="font-size: small;"><span style="line-height: 14.95px;">Purchase offers OSD appears during playback and displays the text:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;"><strong><span style="color: rgb(0, 32, 96);">Purchase Options</span></strong><span style="color: rgb(0, 32, 96);">&nbsp;(OSD&rsquo;s title)</span></span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">&lt;Title&gt; | &lt;Rating&gt; | &lt;Duration&gt;</span></strong></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Buy $&lt;Price&gt;</span></strong></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">The bottom right corner of the OSD displays the following buttons:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Buy</span></strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);"><strong>&nbsp;$&lt;Price&gt;</strong>&nbsp;(highlighted by default)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Cancel</span></strong></span></p>
+<p>4. See Expected Result 3.</p>
+<p>5. <span style="line-height: 14.95px; font-size: small;">The following purchase OSD becomes displayed now:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Confirm Your Purchase:</span></b></span><strong>&nbsp;<span style="color: rgb(0, 0, 128);">&lt;Programs title&gt;</span></strong><span style="color: rgb(0, 32, 96); line-height: 14.95px; font-size: small;">&nbsp;(OSD&rsquo;s title)</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Your  purchase is available anytime, anywhere, as long as you remain a  DIRECTV subscriber. Please visit directv.com/purchases for terms and  conditions</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">The following purchase confirmation OSD should display:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Thank You!&nbsp;</span></b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">(OSD&rsquo;s title)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">&lt;Title&gt; has been added to the Purchases folder in your Playlist.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">NOTE: This title will always be available in your purchases folder, even if you remove it from the Playlist.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">-  The 4K version of the title can be fully viewed and is listed in the  Purchases menu (MENU -&gt; Recordings -&gt; Manage Recordings...)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- The 4K version of the title is listed in the Purchases folder of the Playlist.</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- No &quot;Rental Ends&quot; text is seen in the Playlist entries and info screen for this 4K title. </span></span></p>
+<p>6. <span style="line-height: 14.95px; font-size: small;">The Purchase OSD does not appear and the title can be watched past the free preview period.<span style="line-height: 14.95px; font-size: small;"><br />
+</span></span></p>
+<p class="MsoNormal"><span style="line-height: 14.95px; font-size: small;">The HD version of the title is successfully authorized when the 4K version is Bought.</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- No &quot;Rental Ends&quot; text is seen in the Playlist entries and info screen for this HD title. </span></span></p>]]></expectedresults>
+</testcase>
+
+<testcase internalid="401911" name="T276.9-02: Renting a 4K Rental-EST title authorizes its HD-equivalent">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[10552]]></externalid>
+	<summary><![CDATA[<p><strong>[R-EST.64]<br />
+<br />
+</strong><strong>If the EST content is purchased as 4K content, the STB guide shall display both 4K and HD titles for that content.</strong><br />
+&nbsp;</p>
+<p><span style="font-size: small; line-height: 14.95px;">Prerequisites:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">-STB is connected to the Internet</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;">-STB has acquired EST VO to enable EST - if VO&nbsp;is not on air, then smart search the keyword &quot;MWCMD&nbsp;E5T ON&quot; to enable EST</span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>NOTE:</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST ONLY&quot; means that the title is available for EST purchase only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;Rental ONLY&quot; means that the title is available for rental only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST&nbsp;&amp; Rental&quot; means that the title is available for EST purchase and for rental.</strong></span></p>]]></summary>
+	<steps><![CDATA[<p>1. Find an unpurchased 4K BBVOD (either &quot;Rental ONLY&quot; or &quot;EST &amp; Rental&quot;) that also has an HD equivalent (with the same content ID).<br />
+You can select on titles on the VOD Homepage (1100 - 1104) or in a Smart Search for the 4K Category&nbsp; - if multiple versions of the title are available, they will be listed.</p>
+<p>2. Download both the HD &amp; 4K versions of the title.</p>
+<p>3. Play the HD version of the title.</p>
+<p>4. Play the 4K version of the title.</p>
+<p>5. Rent the 4K title and view past the free preview period.</p>
+<p>6. Play the HD title again.</p>]]></steps>
+	<expectedresults><![CDATA[<p>1. -</p>
+<p>2. Both HD and 4K versions of the title appear in the Playlist.</p>
+<p>3. <span style="font-size: small;"><span style="line-height: 14.95px;">Purchase offers OSD appears during playback and displays the text:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;"><strong><span style="color: rgb(0, 32, 96);">Purchase Options</span></strong><span style="color: rgb(0, 32, 96);">&nbsp;(OSD&rsquo;s title)</span></span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">&lt;Title&gt; | &lt;Rating&gt; | &lt;Duration&gt;</span></strong></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Rent $&lt;Price&gt; - &lt;rental duration in day(s)&gt; day rental</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 115%;">The bottom right corner of the OSD displays the following buttons:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Rent $&lt;Price&gt; - &lt;rental duration in day(s)&gt; day&nbsp;</span></b></span><b style="font-size: small; text-indent: -0.25in;"><span style="line-height: 115%; color: rgb(0, 32, 96);">(</span></b><span style="font-size: small; text-indent: -0.25in; line-height: 115%; color: rgb(0, 32, 96);">highlighted by default)</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Cancel</span></strong></span></p>
+<p>4. See Expected Result 3.</p>
+<p>5. <span style="line-height: 14.95px; font-size: small;">The following purchase OSD becomes displayed now:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Confirm Your Purchase:</span></b></span><span style="color: rgb(0, 0, 128);">&nbsp;<strong>&lt;Program's title&gt;</strong></span><span style="color: rgb(0, 32, 96); line-height: 14.95px; font-size: small;">&nbsp;(OSD&rsquo;s title)</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">SELECT</span></b></span>&nbsp;&quot;<b style="font-size: small;"><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Rent $&lt;Price&gt;&quot; to start your &lt;rental duration in day(s)&gt; day rental.</span></b></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">The bottom right corner of the OSD displays the following buttons:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Rent $&lt;Price&gt; - &lt;rental duration in day(s)&gt; day&nbsp;</span></b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">(highlighted by default)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Cancel</span></b></span></p>
+<p>&nbsp;</p>
+<p class="MsoNormal">After selecting Rent button t<span style="font-size: small;"><span style="line-height: 115%;">he following purchase confirmation OSD should display:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Thank You! </span></b><span style="line-height: 115%; color: rgb(0, 32, 96);">(OSD&rsquo;s title)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">&lt;Title&gt; has been added to the Purchases folder in your Playlist.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Rental Ends &lt;Date&gt; at &lt;Time&gt;.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- The 4K version of the title can be fully viewed and is listed in the Purchases menu (MENU -&gt; Recordings -&gt; Manage Recordings...)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- The 4K version of the title is listed in the Purchases folder of the Playlist.</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;"> </span></span></p>
+<p class="MsoNormal">6. <span style="line-height: 14.95px; font-size: small;">The Purchase OSD does not appear and the title can be watched past the free preview period.<br />
+</span></p>
+<p class="MsoNormal"><span style="line-height: 14.95px; font-size: small;">The HD version of the title is successfully authorized when the 4K version is Rented.</span></p>]]></expectedresults>
+</testcase>
+
+<testcase internalid="401913" name="T276.9-03: Buying an HD EST title does not authorize its 4K-equivalent">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[10553]]></externalid>
+	<summary><![CDATA[<p><strong>[R-EST.65]</strong></p>
+<p><strong>If the EST content is purchased as HD content, the STB guide shall display the HD and lower resolutions titles for that content. And not 4K, if available.</strong></p>
+<p><span style="font-size: small; line-height: 14.95px;">Prerequisites:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">-STB is connected to the Internet</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;">-STB has acquired EST VO to enable EST - if VO&nbsp;is not on air, then smart search the keyword &quot;MWCMD&nbsp;E5T ON&quot; to enable EST</span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>NOTE:</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST ONLY&quot; means that the title is available for EST purchase only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;Rental ONLY&quot; means that the title is available for rental only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST&nbsp;&amp; Rental&quot; means that the title is available for EST purchase and for rental.</strong></span></p>]]></summary>
+	<steps><![CDATA[<p>1. Find an unpurchased 4K BBVOD (either &quot;EST ONLY&quot; or &quot;EST &amp;  Rental&quot;) that also has an HD equivalent (with the same content ID).<br />
+You can select on titles on the 4K Homepage (1100 - 1104) or in a Smart Search for the 4K Category - if multiple versions of the title are available, they will be listed.</p>
+<p>2. Download both the HD &amp; 4K versions of the title.</p>
+<p>3. Play the 4K version of the title.</p>
+<p>4. Play the HD version of the title.</p>
+<p>5. Buy the HD title.</p>
+<p>6. Play the 4K title again.</p>]]></steps>
+	<expectedresults><![CDATA[<p>1. -</p>
+<p>2. Both HD and 4K versions of the title appear in the Playlist.</p>
+<p>3. <span style="font-size: small;"><span style="line-height: 14.95px;">Purchase offers OSD appears during playback and displays the text:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;"><strong><span style="color: rgb(0, 32, 96);">Purchase Options</span></strong><span style="color: rgb(0, 32, 96);">&nbsp;(OSD&rsquo;s title)</span></span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">&lt;Title&gt; | &lt;Rating&gt; | &lt;Duration&gt;</span></strong></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Buy $&lt;Price&gt;</span></strong></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">The bottom right corner of the OSD displays the following buttons:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Buy</span></strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);"><strong>&nbsp;$&lt;Price&gt;</strong>&nbsp;(highlighted by default)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Cancel</span></strong></span></p>
+<p>4. See Expected Result 3.</p>
+<p>5. <span style="line-height: 14.95px; font-size: small;">The following purchase OSD becomes displayed now:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Confirm Your Purchase:</span></b></span><strong>&nbsp;<span style="color: rgb(0, 0, 128);">&lt;Programs title&gt;</span></strong><span style="color: rgb(0, 32, 96); line-height: 14.95px; font-size: small;">&nbsp;(OSD&rsquo;s title)</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Your   purchase is available anytime, anywhere, as long as you remain a   DIRECTV subscriber. Please visit directv.com/purchases for terms and   conditions</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">The following purchase confirmation OSD should display:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Thank You!&nbsp;</span></b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">(OSD&rsquo;s title)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">&lt;Title&gt; has been added to the Purchases folder in your Playlist.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">NOTE: This title will always be available in your purchases folder, even if you remove it from the Playlist.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- The correct HD version of the title is listed in the Purchases menu (MENU -&gt; Recordings -&gt; Manage Recordings...)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- The HD version of the title is listed in the Purchases folder of the Playlist.</span></span></p>
+<p class="MsoNormal">6. <span style="line-height: 14.95px; font-size: small;">The Purchase OSD still appears.<br />
+</span></p>
+<p class="MsoNormal"><span style="line-height: 14.95px; font-size: small;">The 4K version of the title is not authorized when the HD version is Bought.</span></p>]]></expectedresults>
+</testcase>
+
+<testcase internalid="401915" name="T276.9-04: Renting an HD Rental-EST title does not authorize its 4K-equivalent">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[10554]]></externalid>
+	<summary><![CDATA[<p><strong>[R-EST.65]</strong></p>
+<p><strong>If the EST content is purchased as HD content, the STB guide  shall display the HD and lower resolutions titles for that content. And  not 4K, if available.</strong></p>
+<p><span style="font-size: small; line-height: 14.95px;">Prerequisites:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">-STB is connected to the Internet</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;">-STB has acquired EST VO to enable EST - if VO&nbsp;is not on air, then smart search the keyword &quot;MWCMD&nbsp;E5T ON&quot; to enable EST</span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>NOTE:</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST ONLY&quot; means that the title is available for EST purchase only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;Rental ONLY&quot; means that the title is available for rental only.</strong></span></p>
+<p class="MsoNormal"><span style="color: rgb(255, 0, 0);"><strong>For purposes of these test cases the term &quot;EST&nbsp;&amp; Rental&quot; means that the title is available for EST purchase and for rental.</strong></span></p>]]></summary>
+	<steps><![CDATA[<p>1. Find an unpurchased 4K BBVOD (either &quot;Rental ONLY&quot; or &quot;EST &amp;  Rental&quot;) that also has an HD equivalent (with the same content ID).<br />
+You can select on titles on the 4K Homepage (1100 - 1104) or in a Smart Search for the 4K Category - if multiple versions of the title are available, they will be listed.</p>
+<p>2. Download both the HD &amp; 4K versions of the title.</p>
+<p>3. Play the 4K version of the title.</p>
+<p>4. Play the HD version of the title.</p>
+<p>5. Rent the HD title.</p>
+<p>6. Play the 4K title again.</p>]]></steps>
+	<expectedresults><![CDATA[<p>1. -</p>
+<p>2. Both HD and 4K versions of the title appear in the Playlist.</p>
+<p>3. <span style="font-size: small;"><span style="line-height: 14.95px;">Purchase offers OSD appears during playback and displays the text:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;"><strong><span style="color: rgb(0, 32, 96);">Purchase Options</span></strong><span style="color: rgb(0, 32, 96);">&nbsp;(OSD&rsquo;s title)</span></span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">&lt;Title&gt; | &lt;Rating&gt; | &lt;Duration&gt;</span></strong></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Rent $&lt;Price&gt; - &lt;rental duration in day(s)&gt; day rental</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 115%;">The bottom right corner of the OSD displays the following buttons:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Rent $&lt;Price&gt; - &lt;rental duration in day(s)&gt; day&nbsp;</span></b></span><b style="font-size: small; text-indent: -0.25in;"><span style="line-height: 115%; color: rgb(0, 32, 96);">(</span></b><span style="font-size: small; text-indent: -0.25in; line-height: 115%; color: rgb(0, 32, 96);">highlighted by default)</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><strong><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Cancel</span></strong></span></p>
+<p>4. See Expected Result 3.</p>
+<p>5. <span style="line-height: 14.95px; font-size: small;">The following purchase OSD becomes displayed now:</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Confirm Your Purchase:</span></b></span><span style="color: rgb(0, 0, 128);">&nbsp;<strong>&lt;Program's title&gt;</strong></span><span style="color: rgb(0, 32, 96); line-height: 14.95px; font-size: small;">&nbsp;(OSD&rsquo;s title)</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">SELECT</span></b></span>&nbsp;&quot;<b style="font-size: small;"><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Rent $&lt;Price&gt;&quot; to start your &lt;rental duration in day(s)&gt; day rental.</span></b></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">The bottom right corner of the OSD displays the following buttons:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Rent $&lt;Price&gt; - &lt;rental duration in day(s)&gt; day&nbsp;</span></b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">(highlighted by default)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 14.95px; color: rgb(0, 32, 96);">Cancel</span></b></span></p>
+<p class="MsoNormal">After selecting Rent button t<span style="font-size: small;"><span style="line-height: 115%;">he following purchase confirmation OSD should display:</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Thank You! </span></b><span style="line-height: 115%; color: rgb(0, 32, 96);">(OSD&rsquo;s title)</span></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">&lt;Title&gt; has been added to the Purchases folder in your Playlist.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><b><span style="line-height: 115%; color: rgb(0, 32, 96);">Rental Ends &lt;Date&gt; at &lt;Time&gt;.</span></b></span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="line-height: 14.95px;">- The correct HD version of the title is listed in the Purchases menu (MENU -&gt; Recordings -&gt; Manage Recordings...)</span></span></p>
+<p class="MsoNormal">6. <span style="line-height: 14.95px; font-size: small;">The Purchase OSD still appears.<br />
+</span></p>
+<p class="MsoNormal"><span style="line-height: 14.95px; font-size: small;">The 4K version of the title is not authorized when the HD version is Rented.</span></p>]]></expectedresults>
+</testcase>
+</testsuite>

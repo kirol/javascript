@@ -1,0 +1,9 @@
+ Not all web portal are build using node.js, but all of them need a package manager.
+
+Longer version:
+
+Bower can be used for any front-end development to manage front-end assets (HTML, CSS & JS) - regardless of the technology used by the back-end. In other words, Bower can, and is, used with RoR, PHP, etc. 
+
+NPM, on the other hand, is a package manager specific to the node.js back-end environment.
+
+If you are building a web app with node.js, then yes - Bower's functionality may seem superfluous. If, on the other hand, you are using PHP, RoR, J2EE, et al., it comes in very handy...
