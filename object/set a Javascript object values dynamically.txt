@@ -1,0 +1,2 @@
+var myObj = {};
+myObj[key] = value;
