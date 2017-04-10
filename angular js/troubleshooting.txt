@@ -1,0 +1,13 @@
+What to do when AngularJS does not work?
+1. Check if <html ng-app="myApp"> has the correct name or not
+2. In case you are using custom directive: 
+
+In the file which is used to define custom directive, its name (w3TestDirective) must use a camel case name
+app.directive("w3TestDirective",function(){
+  return {
+    template: "<h1>Custom directive</h1>"
+  }
+});
+
+In the html file (view), to invoke this custom directive you have to use - separated name, w3-test-directive
+<w3-test-directive></w3-test-directive>

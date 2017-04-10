@@ -1,0 +1,1 @@
+Directives can create controllers, which can the be used by other directives. This allows directives to be combined to create more complex components.
