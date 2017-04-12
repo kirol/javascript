@@ -1,0 +1,1 @@
+ng-init is not very commmon.You will learn a better way to initialize data in this chapter about controllers.

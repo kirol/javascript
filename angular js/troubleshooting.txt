@@ -11,3 +11,24 @@ app.directive("w3TestDirective",function(){
 
 In the html file (view), to invoke this custom directive you have to use - separated name, w3-test-directive
 <w3-test-directive></w3-test-directive>
+
+
+3. ReferenceError: function is not defined in javascript
+This part is problematic (among a few others):
+
+onclick=openWebsite(url);
+You need to use angular's build-it directive ng-click
+
+<ons-col ng-click="openWebsite(url)">
+If you use onclick, you register a native handler for the click event and the browser tries to find the openWebsite() function in the global (window) scope (note: no relation to Angular scopes), where it does not exist.
+
+If you use ng-click, on the other hand, Angular will search for the openWebsite() method in the corresponding scope, which is what you want.
+
+
+4. Function does not work
+Change
+function saveManageClassesFunc() {}
+To
+$scope.saveManageClassesFunc = function() {}
+
+
