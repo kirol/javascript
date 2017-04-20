@@ -1,0 +1,2 @@
+undefined error message is displayed
+--> Change User.find method to User.findOne method

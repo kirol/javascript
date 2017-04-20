@@ -1,0 +1,2 @@
+Undefined error message
+Use typeof to check if it is correct type or not
