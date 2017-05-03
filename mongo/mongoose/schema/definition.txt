@@ -7,7 +7,8 @@ If you doesn't want to use any MAPPER for your data models then you can also use
 Mongoose is one of the orm's who give us functionality to access the mongo data with easily understandable queries.
 
 Mongoose plays as a role of abstraction over your database model.
-
+collection = table
+document = row
 
 
 
