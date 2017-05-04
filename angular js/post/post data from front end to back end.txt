@@ -1,0 +1,31 @@
+// save component view
+            $scope.saveComponentViewFunc = function() {
+                var dataObj = {};
+                var dataArray = [];
+                var strUser;
+                var e = document.getElementById("cmbMoreFunction02");
+                if (e.options[e.selectedIndex] !== undefined) {
+                    strUser = e.options[e.selectedIndex].text;
+                    dataObj["text"] = strUser;
+                    dataObj["id"] = strUser;
+                    dataObj["category"] = "UndesiredEvent";
+                    dataObj["color"] = "lightyellow";
+                    var myOpts = document.getElementById('undo_redo_to').options;
+                    for (var i in myOpts) {
+                        if (myOpts[i].value !== undefined) {
+                            dataArray.push(myOpts[i].value);
+                        }
+                    }
+                    dataObj["listOfClasses"] = dataArray;
+                } else {
+                    alert("Please input component's name ");
+                    return;
+                }
+
+
+                $http.post('/save_component_view', dataObj).then(function successCallback(response) {
+
+                }, function errorCallback(response) {
+
+                });
+            }
