@@ -1,0 +1,3 @@
+﻿là một công cụ rendering HTML được sử dụng bởi Chrome và Safari. Nó hỗ trợ một số các thuộc tính tùy chỉnh CSS mục bởi -webkit-.
+
+firefox thì sử dụng gecko
