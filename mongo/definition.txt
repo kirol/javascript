@@ -1,2 +1,4 @@
 collection = table
 document = row
+
+The concept of column does not exist here.
