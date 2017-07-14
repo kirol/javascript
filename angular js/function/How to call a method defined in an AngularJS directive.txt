@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/16881478/how-to-call-a-method-defined-in-an-angularjs-directive

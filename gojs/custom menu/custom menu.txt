@@ -1,0 +1,2 @@
+https://laptrinhx.com/topic/28011/context-menus-trong-gojs
+http://gojs.net/latest/intro/contextMenus.html
