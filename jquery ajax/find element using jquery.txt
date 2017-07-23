@@ -1,0 +1,8 @@
+<img src="http://placehold.it/100.png" data-selected="true">
+<img src="http://placehold.it/100.png" data-selected="false">
+<img src="http://placehold.it/100.png" data-selected="false">
+<img src="http://placehold.it/100.png" data-selected="true">
+<img src="http://placehold.it/100.png" data-selected="false">
+
+$("img[data-selected='true']")
+CSS attribute selector.

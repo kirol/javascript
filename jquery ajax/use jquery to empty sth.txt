@@ -1,0 +1,1 @@
+jQuery('#undo_redo_01_to').html("")

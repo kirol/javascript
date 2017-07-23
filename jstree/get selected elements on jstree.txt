@@ -1,0 +1,10 @@
+ You can not use normal jquery to find elements on jstree. You have to use jstree's API to do that.
+ 
+ 
+ $('#container').on('changed.jstree', function (e, data) {
+    for (var i = 0; i < data.selected.length; i++) 
+	{
+         console.log(data.instance.get_node(data.selected[i]).text);
+    }
+});
+
