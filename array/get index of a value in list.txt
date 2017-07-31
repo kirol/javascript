@@ -1,0 +1,5 @@
+you can use indexOf:
+
+var imageList = [100,200,300,400,500];
+var index = imageList.indexOf(200); // 1
+you will get -1 if it cant find a value in the array.

@@ -1,0 +1,3 @@
+$("#inte_cmbMoreFunction03").html($("#inte_cmbMoreFunction03 option").sort(function(a, b) {
+                            return a.text == b.text ? 0 : a.text < b.text ? -1 : 1
+                        }))

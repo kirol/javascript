@@ -1,0 +1,14 @@
+$.when(
+            $.ajax({
+                url: '/process_save_integrated',
+                method: 'post',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data:myDiagram.model.toJson(),
+                success: function(response) {
+                    //alert( response );
+                    load();
+                }
+            })).done(function() {
+
+        });
