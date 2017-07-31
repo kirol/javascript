@@ -1,0 +1,10 @@
+$("#inte_undo_redo_01_to")
+                    .change(function() {
+                        var str = "";
+                        $("#inte_undo_redo_01_to option:selected").each(function() {
+                            str += $(this).text() + " ";
+                            console.log(str);
+                        });
+                        /*$("div").text(str);*/
+                    })
+                    .trigger("change");
