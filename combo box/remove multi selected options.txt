@@ -1,7 +1,4 @@
-// Remove value from right container
             $scope.itc_remove = function() {
-                var x = document.getElementById("inte_undo_redo_01_to");
-                console.log(x.selectedIndex);
                 $("#inte_undo_redo_01_to option:selected").each(function() {
                     $(this).remove();
                 });
