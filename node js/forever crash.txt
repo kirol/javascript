@@ -1,0 +1,7 @@
+Using forever to restart service after crashing
+
+/usr/local/bin/forever start -c /usr/bin/node /home/minhlq/newHITA/bin/www
+
+
+
+forever list
