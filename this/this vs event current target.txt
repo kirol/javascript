@@ -1,0 +1,19 @@
+
+2
+down vote
+accepted
+The currentTarget event attribute returns the element whose event listeners triggered the event. This is only particularly useful during capturing and bubbling.
+
+You can also use this keyword, but when you use the Microsoft event registration model the this keyword doesnÅft refer to the HTML element.
+
+Please see following link for more information: http://www.quirksmode.org/js/events_order.html
+
+*Problems of the Microsoft mode*l
+
+But when you use the Microsoft event registration model the this keyword doesnÅft refer to the HTML element. Combined with the lack of a currentTarget?like property in the Microsoft model, this means that if you do
+
+element1.attachEvent('onclick',doSomething)
+element2.attachEvent('onclick',doSomething)
+you cannot know which HTML element currently handles the event. This is the most serious problem with the Microsoft event registration model and for me itÅfs reason enough never to use it, not even in IE/Win only applications.
+
+Note:: it may be,now resolved it
