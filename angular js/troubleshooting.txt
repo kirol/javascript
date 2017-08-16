@@ -1,4 +1,13 @@
 What to do when AngularJS does not work?
+First check that below lines are available:
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="../controllers/main-ng.directive.js"></script>
+<script src="../controllers/upload-ng.directive.js"></script>
+
+Then ensure that below line is available
+<html lang="en" ng-app="myApp">
+
+
 1. Check if <html ng-app="myApp"> has the correct name or not
 2. In case you are using custom directive: 
 
