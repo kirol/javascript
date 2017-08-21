@@ -1,0 +1,13 @@
+req.body holds parameters that are sent up from the client as part of a POST request. See the API.
+
+// POST user[name]=tobi&user[email]=tobi@learnboost.com
+req.body.user.name
+// => "tobi"
+
+req.body.user.email
+// => "tobi@learnboost.com"
+
+// POST { "name": "tobi" }
+req.body.name
+// => "tobi"
+

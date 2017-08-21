@@ -1,0 +1,33 @@
+$("form#uploadDataForm").submit(function(){
+
+    var formData = new FormData(this);
+	formData.append("lala","lolo");
+
+    $.ajax({
+        url: window.location.pathname,
+        type: 'POST',
+        data: formData,
+        async: false,
+        success: function (data) {
+            location.reload(); // reload page
+        },
+        cache: false,
+        contentType: false,
+        processData: false
+    });
+
+    return false;
+});
+
+
+
+
+
+App.js
+Use formidable to parse data
+var form = new formidable.IncomingForm();
+form.parse(req);
+var projectInfo = [];
+form.on('field',function(name,value){
+	projectInfo.push(value);
+}
