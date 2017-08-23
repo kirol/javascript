@@ -1,0 +1,15 @@
+The syntax for accessing the property of an object is:
+
+objectName.property          // person.age
+or
+
+objectName["property"]       // person["age"]
+or
+
+objectName[expression]       // x = "age"; person[x]
+
+Example 1
+person.firstname + " is " + person.age + " years old.";
+Try it Yourself »
+Example 2
+person["firstname"] + " is " + person["age"] + " years old.";

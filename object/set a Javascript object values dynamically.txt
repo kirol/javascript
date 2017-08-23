@@ -1,2 +1,13 @@
+In case you can not set or update data to object, remember that you have to define the object first by using var myObj = {}. data is a tmp obj, user.projects is an existing obj, so if we want to update this existing obj, we need to set it to empty first before update it.
+
+We can do the same steps if user.projects is an array
+
+var data = {};
+var data = user.projects;
+data[i][projectType][j]["classView"] = testJson;
+user.projects = {}; // we need to set it to empty 
+user.projects = data;
+user.markModified(user.projects);
+
 var myObj = {};
 myObj[key] = value;

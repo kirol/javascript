@@ -1,0 +1,1 @@
+https://gojs.net/latest/intro/layouts.html#LayoutInvalidation

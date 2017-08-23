@@ -1,0 +1,3 @@
+JSON.stringify turns a Javascript object into JSON text and stores that JSON text in a string.
+
+JSON.parse turns a string of JSON text into a Javascript object.
