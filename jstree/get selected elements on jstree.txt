@@ -1,3 +1,8 @@
+console.log($(".jstree-clicked").text());
+
+
+
+
  You can not use normal jquery to find elements on jstree. You have to use jstree's API to do that.
  
  

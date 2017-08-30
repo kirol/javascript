@@ -1,0 +1,8 @@
+ function customFocus() {
+      var x = window.scrollX || window.pageXOffset;
+      var y = window.scrollY || window.pageYOffset;
+      go.Diagram.prototype.doFocus.call(this);
+      window.scrollTo(x, y);
+    }
+
+    myDiagram.doFocus = customFocus;

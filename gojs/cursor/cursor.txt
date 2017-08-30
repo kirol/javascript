@@ -1,0 +1,1 @@
+When a mouse-over finds a GraphObject whose GraphObject.cursor property is not an empty string, it sets the Diagram.currentCursor to that value. If there is no GraphObject, or if no GraphObject has a cursor value, it sets Diagram.currentCursor to the empty string, which causes the Diagram.defaultCursor to be used.
