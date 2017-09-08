@@ -1,0 +1,6 @@
+mongoexport -d impact -c users -o domain-bk.json
+-d: database name
+-c: collection name
+
+
+mongoimport -d impact -c users --file domain-bk.json
