@@ -1,0 +1,59 @@
+<!-- 
+<div >
+<fieldset style="width:1100px;">
+Name&nbsp;
+<select style="width:200px;" id="memberName" name="memberName" onchange="changeMemberName(this)">
+	<option value=""></option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ATT UID&nbsp;
+<select style="width:70px;" id="memberATTUID" name="memberATTUID" onchange="changeMemberATTUID(this)">
+	<option value=""></option>
+	</select>	
+<table>
+	<tr>
+		<td align='center'>PMT ID</td>
+		<%
+			/*for (int i = 0; i < maxDayOfMonth; i++)
+			{
+				out.print("<td align='center'>");
+				if (i < 9)
+					out.print("0" + (i+1));
+				else
+					out.print(i+1);
+				out.print("</td>");
+			}*/
+		%>
+	</tr>
+	<tr>
+		<td align='center'>
+			<select id="pmtid" name="pmtid" onchange="doSelectPMTID(this)">
+				<option value=""></option>
+			</select>
+		</td>
+		%<
+			/*for (int i = 0; i < maxDayOfMonth; i++)
+			{
+				out.print("<td align='center'>");
+				out.print("<input id='hours_" + (i+1) + "' type='text' style='width:30px;text-align: center;'/>");
+				out.print("</td>");
+			}*/
+		%>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			<input type='button' style='width:120px;' value='Save' />
+		</td>
+		<td>
+			<input type='button' style='width:120px;' value='Add More PMT ID' />
+		</td>
+		<td>
+			<input type='button' style='width:120px;' value='Add More Member' />
+		</td>
+	</tr>
+</table>
+</fieldset>
+</div>
+ -->
