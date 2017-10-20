@@ -1,0 +1,1 @@
+ if (jsonDataArray === undefined || jsonDataArray.length == 0) { // array is empty or does not exist
