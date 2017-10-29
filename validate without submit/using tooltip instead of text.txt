@@ -1,0 +1,29 @@
+https://stackoverflow.com/questions/14741688/how-to-display-messages-from-jquery-validate-plugin-inside-of-tooltipster-toolti
+
+Note that the onlyOne option has been removed from the 4.0 version of the Tooltipster plugin.
+
+I also replaced the success callback with unhighlight. On "optional" fields, the error message was never removed when the field was subsequently blanked out... this is because the success function does not fire under these circumstances. This issue was not isolated to Tooltipster version 4, however the following code solves it moving forward.
+
+// initialize Tooltipster on text input elements
+$('input[type="text"]').tooltipster({ //find more options on the tooltipster page
+    trigger: 'custom', // default is 'hover' which is no good here
+    position: 'top',
+    animation: 'grow'
+});
+
+// initialize jQuery Validate
+$("#myform").validate({
+    errorPlacement: function (error, element) {
+        var ele = $(element),
+            err = $(error),
+            msg = err.text();
+        if (msg != null && msg !== '') {
+            ele.tooltipster('content', msg);
+            ele.tooltipster('open');
+        }
+    },
+    unhighlight: function(element, errorClass, validClass) {
+        $(element).removeClass(errorClass).addClass(validClass).tooltipster('close');
+    },
+    rules: {
+        ....

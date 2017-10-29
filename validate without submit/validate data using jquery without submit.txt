@@ -1,0 +1,23 @@
+Firstly, and most importantly, you must wrap your input elements inside <form></form> tags for the jQuery Validate plugin to operate. However, a submit button is not required.
+
+Secondly, you can programatically trigger the validity test of any or all elements without a submit button by using the .valid() method.
+
+$(document).ready(function() {
+
+    $('#myform').validate({  // initialize the plugin on your form.
+        // rules, options, and/or callback functions
+    });
+
+    // trigger validity test of any element using the .valid() method.
+    $('#myelement').valid();
+
+    // trigger validity test of the entire form using the .valid() method.
+    $('#myform').valid();
+
+    // the .valid() method also returns a boolean...
+    if ($('#myform').valid()) {
+        // something to do if form is valid
+    }
+
+});
+DEMO: http://jsfiddle.net/URQGG/
