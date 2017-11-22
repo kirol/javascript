@@ -1,0 +1,3 @@
+db.getCollection('temp_collection').stats()
+
+storageSize: refers to physical file space allocation (in bytes)

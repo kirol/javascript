@@ -1,0 +1,3 @@
+http://blog.caplin.com/2012/01/13/javascript-is-hard-part-1-you-cant-trust-arrays/
+
+To parse xml, please use xml2js not pixl-xml

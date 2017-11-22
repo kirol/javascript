@@ -1,0 +1,23 @@
+https://stackoverflow.com/questions/7437388/how-can-i-find-key-in-javascript-object-when-his-depth-is-unknown
+
+So long as their is no fear of cyclic references you could do the following
+
+function findX(obj) { 
+  var val = obj['x'];
+  if (val !== undefined) {
+    return val;
+  }
+  for (var name in obj) {
+    var result = findX(obj[name]);
+    if (result !== undefined) {
+      return result;
+    }
+  }
+  return undefined;
+}
+Note: This will search for the property 'x' directly in this object or it's prototype chain. If you specifically want to limit the search to this object you can do so doing the following
+
+if (obj.hasOwnProperty('x')) {
+  return obj['x'];
+}
+And repeating for pattern for the recursive calls to findX

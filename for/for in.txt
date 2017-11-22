@@ -1,0 +1,11 @@
+You shouldn't use FOR for array
+
+When use FOR for object
+FOR IN enumerates the property names (or keys) of an object. On each iteration, another property name string from the object is assigned to the variable.
+It is usually necessary to test object.hasOwnProperty(variable) to determine whether the property name is truly a member of the object or was found instead on the prototype chain.
+
+for (myvar in obj){
+	if (obj.hasOwnProperty(myvar)){
+		...
+	}
+}
