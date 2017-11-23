@@ -9,3 +9,8 @@ for (myvar in obj){
 		...
 	}
 }
+
+flight.number // get value of flight["number"]
+But to ensure that it does not use an property on the prototype chain
+
+flight.hasOwnProperty("number")
