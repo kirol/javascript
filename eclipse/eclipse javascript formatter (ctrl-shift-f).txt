@@ -1,0 +1,10 @@
+The problem can be solved by accessing
+
+Preferences > JavaScript > Code Style > Formatter
+Proceed:
+
+Create a new profile (since you cannot edit the builted-in one), if you haven't already, and click Edit....
+Open the Line Wrapping tab.
+In the Maximum line width field, enter 9999.
+Click Apply, and Ok.
+The problem shows up again for code lines that have more than 9999 characters, but I can live with that.

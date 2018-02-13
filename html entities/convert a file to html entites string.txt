@@ -1,0 +1,3 @@
+https://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii
+Select ecmascript and utf-8
+
