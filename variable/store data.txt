@@ -1,0 +1,5 @@
+// Save data for later use
+$("body").data("numberSTB", numberSTB);
+
+// Load data
+$("body").data("nodeData");
